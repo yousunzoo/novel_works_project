@@ -24,17 +24,58 @@
 <body>
   <!-- layout -->
   <div id="wrap">
-    <header></header>
+    <!-- header -->
+    <header>
+      <div class="header_inner clearfix">
+        <h1 class="logo"></h1>
+        <div class="header_util_box"></div>
+      </div>
+      <nav id="gnb">
+        <ul class="header_gnb_menu"></ul>
+      </nav>
+    </header>
+
+    <!-- mainContainer -->
     <div class="mainContainer">
-      <section id="mainVisual"></section>
+      <section id="mainVisual">
+        <div class="visual_slider_btn clearfix">
+          <button type="button" class="next"></button>
+          <button type="button" class="prev"></button>
+        </div>
+        <div class="visual_slider"></div>
+      </section>
       <section id="mainContent">
-        <article id="mainContent1"></article>
-        <article id="mainContent2"></article>
-        <article id="mainContent3"></article>
-        <article id="mainContent4"></article>
+        <!-- mainContent1 -->
+        <article id="mainContent1" class="clearfix">
+          <div class="mainCon1_left"></div>
+          <div class="mainCon1_right"></div>
+        </article>
+        
+        <!-- mainContent2 -->
+        <article id="mainContent2">
+          <p class="main_tit"></p>
+          <p class="main_sub_tit"></p>
+          <div class="main_process_con"></div>
+        </article>
+        
+        <!-- mainContent3 -->
+        <article id="mainContent3">
+          <p class="main_develop_tit"></p>
+          <div class="main_develop_slider"></div>
+        </article>
+        
+        <!-- mainContent4 -->
+        <article id="mainContent4">
+          <div class="consult_div"></div>
+        </article>
       </section>
     </div>
-    <footer></footer>
+    
+    <!-- footer -->
+    <footer>
+      <div class="footer_top"></div>
+      <div class="footer_bottom"></div>
+    </footer>
   </div>
   <!-- javascript -->  
   <script src="../js/common/jquery-3.6.0.min.js"></script>

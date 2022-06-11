@@ -4,21 +4,43 @@
 
   /* header */
   header {position:absolute; width: 100%; height:100px; background-color: #555;}
+  .header_inner {position:absolute; width: 100%; height: 100%; padding:0 15px; box-sizing: border-box;}
+  .header_inner .logo {position:absolute; display: block; width: 180px; height: 100px; z-index:100; background-color: #fff;}
+  .header_inner .header_util_box {position:absolute; top:50%; right:15px; transform:translateY(-50%); width: 200px; height: 40px; z-index:100; background-color: #fff;}
+  #gnb {position:absolute; width: 100%; height: 100%; z-index:99;}
+  .header_gnb_menu {width: 950px; height: 100%; margin:auto; background-color: #fff;}
 
   /* mainContainer */
   .mainContainer {width: 100%; height: 4100px; background-color: #eee;}
-  #mainVisual {width: 100%; height: 1000px; background-color: #aeaeae;}
-
+  #mainVisual {position:relative; width: 100%; height: 1000px; background-color: #eee;}
+  .visual_slider {width: 100%; height: 850px; background-color: #555;}
+  .visual_slider_btn {position:absolute; left:5%; bottom:100px; width: 250px; height: 100px;}
+  .visual_slider_btn button {width: 100px; height: 100px; border-radius:50px; border:none; background-color: #666;}
+  .visual_slider_btn .next {float:right}
+  .visual_slider_btn .prev {float:left}
   /* mainContent1 */
   #mainContent1 {width: 100%; height: 700px; background-color: #fff;}
+  .mainCon1_left {float:left; width: 520px; height: 100%; background-color: #aaa;}
+  .mainCon1_right {float:right; width: 920px; height: 100%; background-color: #555;}
+
   /* mainContent2 */
-  #mainContent2 {width: 100%; height: 600px; background-color: #ddd;}
+  #mainContent2 {width: 100%; height: auto; background-color: #ddd; padding-top:190px; box-sizing: border-box;}
+  .main_tit {width: 100%; height:30px; font-size: 30px; background-color: #666;}
+  .main_sub_tit {width: 100%; height: 30px; margin-top:15px; margin-bottom:85px; background-color: #666; }
+  .main_process_con {width: 100%; height: 250px; background-color: #666;}
+
+
   /* mainContent3 */
   #mainContent3 {width: 100%; height: 700px; background-color: #555;}
+  .main_develop_tit {width: 100%; height: 30px; background-color: #fff;}
+  .main_develop_slider {width: 100%; height: 490px; background-color: #fff;}
+
   /* mainContent4 */
   #mainContent4 {width: 100%; height: 1100px; background-color: #999;}
+  .consult_div {width: 1100px; height: 420px; margin:auto; background-color: #fff;}
+
   /* footer */
   footer {width: 100%; height: 300px; background-color: #333;}
-
-
+  .footer_top {width: 350px; height: 30px; margin-bottom:35px; background-color: #fff;}
+  .footer_bottom {width: 100%; height: 200px; background-color: #fff;}
 }
