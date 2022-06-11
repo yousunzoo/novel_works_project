@@ -1,0 +1,24 @@
+@media all {
+  body {width: 100%; height:auto; background-color:var(--background);}
+  #wrap {position:relative; width:100%; max-width : 1440px; margin:auto; height:auto; min-height:1000px}
+
+  /* header */
+  header {position:absolute; width: 100%; height:100px; background-color: #555;}
+
+  /* mainContainer */
+  .mainContainer {width: 100%; height: 4100px; background-color: #eee;}
+  #mainVisual {width: 100%; height: 1000px; background-color: #aeaeae;}
+
+  /* mainContent1 */
+  #mainContent1 {width: 100%; height: 700px; background-color: #fff;}
+  /* mainContent2 */
+  #mainContent2 {width: 100%; height: 600px; background-color: #ddd;}
+  /* mainContent3 */
+  #mainContent3 {width: 100%; height: 700px; background-color: #555;}
+  /* mainContent4 */
+  #mainContent4 {width: 100%; height: 1100px; background-color: #999;}
+  /* footer */
+  footer {width: 100%; height: 300px; background-color: #333;}
+
+
+}
