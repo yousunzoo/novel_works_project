@@ -27,3 +27,5 @@ z-index: -1; width: 0; height: 0; overflow: hidden;}
 
 .fc-green {color:var(--main_01)}
 .fc-blue {color:var(--main_02)}
+
+.middle_line {display: inline-block; width: 30px; height: 2px;  margin:20px 0;}
