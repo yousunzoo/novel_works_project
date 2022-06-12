@@ -49,3 +49,7 @@ table {
 a, span, strong {display:block; text-decoration: none;}
 
 button {border:none; outline:none; background:none;}
+
+input,select {background: none; border:none;}
+
+textarea {border:none}
