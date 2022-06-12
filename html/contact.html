@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!-- contact.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+  
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/common/variable.css">
+  <link rel="stylesheet" href="../css/src/contact.css">
+
+  <link rel="apple-touch-icon" href="../favicon.ico">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/png">
+  <script src="../js/common/modernizr-custom.js"></script>
+  <title>노블웍스 - Contact Us</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header>
+      <div class="header_inner clearfix">
+        <h1 class="logo">
+          <a href="../index.html" title="메인으로">
+            <img src="../images/common/header/logo.png" alt="노블웍스">
+          </a>
+        </h1>
+        <div class="header_util_box clearfix">
+          <div class="header_lang">
+            <ul class="clearfix">
+              <li><a href="#">ENG</a></li>
+              <li class="selected"><a href="#">KOR</a></li>
+            </ul>
+          </div>
+          <button type="button" class="site_map">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <nav id="gnb">
+        <h2 class="blind">주메뉴</h2>
+        <div id="gnbBg"></div>
+        <ul class="header_gnb_menu clearfix">
+          <li class="gnb1">
+            <a href="#">company</a>
+            <div class="gnb_2dep">
+              <ul>
+                <li><a href="#"><span>회사정보</span></a></li>
+                <li><a href="#"><span>특허사항</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="gnb2">
+            <a href="#">business</a>
+            <div class="gnb_2dep">
+              <ul>
+                <li><a href="#"><span>제품개발 생산</span></a></li>
+                <li><a href="#"><span>원천기술 개발</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="gnb3">
+            <a href="#">product</a>
+            <div class="gnb_2dep">
+              <ul>
+                <li><a href="#"><span>All</span></a></li>
+                <li><a href="#"><span>UV 소독</span></a></li>
+                <li><a href="#"><span>CLEAN</span></a></li>
+                <li><a href="#"><span>소형가전</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="gnb4">
+            <a href="#">technology</a>
+            <div class="gnb_2dep">
+              <ul>
+                <li><a href="#"><span>UV LED 살균</span></a></li>
+                <li><a href="#"><span>광촉매 살균</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="gnb5">
+            <a href="#">contact us</a>
+            <div class="gnb_2dep">
+              <ul>
+                <li><a href="#"><span>Contact us</span></a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <section id="banner">
+        <div class="banner_txt_con">
+          <div class="table_cell_layout">
+            <p class="banner_sub_txt">global business</p>
+            <h2 class="banner_tit">Contact Us</h2>
+            <div class="location">
+              <ul class="clearfix">
+                <li class="go_to_home">
+                  <a href="../index.html" title="HOME">
+                  <i class="fa-solid fa-house"></i>
+                  </a>
+                </li>
+                <li class="first_route">Contact Us</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="middleArea">
+        <section id="content">
+          <div class="consult_div">
+            <h5 class="main_contact_tit">온라인 상담신청</h5>
+            <form name="contact_form" id="contact_form" action="#" method="POST">
+              <div class="main_contact_inner clearfix">
+                <div class="info">
+                  <fieldset class="information">
+                    <ul>
+                      <li class="clearfix">
+                        <label for="clientName">
+                          <span>이름</span>
+                        </label>
+                        <input type="text" id="clientName" name="clientName" value="" placeholder="담당자 성함을 입력하세요." required />
+                      </li>
+                      <li class="clearfix">
+                        <label for="clientCompany">
+                          <span>회사명</span>
+                        </label>
+                        <input type="text" id="clientCompany" name="clientCompany" value="" placeholder="회사명을 입력하세요." required />
+                      </li>
+                      <li class="clearfix">
+                        <label for="clientNumber">
+                          <span>연락처</span>
+                        </label>
+                        <input type="number" id="clientNumber" name="clientNumber" value="" placeholder="연락처를 '-'없이 입력하세요." required />
+                      </li>
+                      <li class="clearfix">
+                        <label for="productIndex">
+                          <span>문의상품</span>
+                        </label>
+                        <select name="productIndex" id="productIndex" required />
+                        <option value="">문의하실 상품을 선택하세요.</option>
+                        <option value="1">JJOBI</option>
+                        <option value="2">JJOBI BOX</option>
+                        <option value="3">스마트 아로마 디퓨저</option>
+                        <option value="4">이유식 수저 살균기</option>
+                        <option value="5">칫솔살균기</option>
+                        <option value="6">코코몽 에어조이</option>
+                        <option value="7">큐빙가습기</option>
+                        <option value="8">패브릭 장난감 살균함</option>
+                        <option value="9">폼 디스펜서</option>
+                      </select>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  
+                </div>
+
+                <div class="qna">
+                  <p class="tit">문의내용</p>
+                  <textarea name="qna_content" id="qna_content" placeholder="문의하실 내용을 입력해주세요.(100자 내외)" maxlength="100"></textarea>
+                  <div class="contact_privacy_con clearfix">
+                    <a href="#" class="contact_privacy_ex">
+                      <span>개인정보처리방침</span>
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <fieldset class="contact_check_btn">
+                      <input type="checkbox" id="privacy_agree" name="privacy_agree">
+                      <label for="privacy_agree">개인정보처리방침에 동의합니다.
+                        <i class="fa-regular fa-circle-check"></i>
+                      </label>
+                    </fieldset>
+                  </div>
+                  <button type="submit" class="contact_btn">상담 신청하기</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_inner">
+        <a href="#wrap" class="to_top_btn">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+        <div class="footer_top">
+          <ul class="clearfix">
+            <li><a href="#"><b>Privacy Policy</b></a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Location</a></li>
+          </ul>
+        </div>
+        <div class="footer_bottom">
+          <div class="footer_information">
+            <h3 class="tit">information</h3>
+            <ul class="clearfix">
+              <li><span>Company</span>Novel works</li>
+              <li><span>CEO</span>Sung Hyun, Lee</li>
+              <li><span>License No</span>557-86-00290</li>
+            </ul>
+          </div>
+          <div class="footer_contact">
+            <h3 class="tit">contact</h3>
+            <ul class="clearfix">
+              <li><span>T</span>82-31-987-7325</li>
+              <li><span>F</span>82-31-987-7326</li>
+              <li><span>E</span><a href="mailto:info@novel-works.com">info@novel-works.com</a></li>
+            </ul>
+          </div>
+          <div class="footer_location">
+            <h3 class="tit">location</h3>
+            <ul class="clearfix">
+              <li><span>Head office</span>70-2, Yuhyeon-ri, Yangchon-eup, Gimpo-si, Gyeonggi-do, Republic of Korea</li>
+              <li><span>Korea Factory</span>70-2, Yuhyeon-ri, Yangchon-eup, Gimpo-si, Gyeonggi-do, Republic of Korea</li>
+              <li><span>China Factory</span>3-3, No 17 Sanwei Gongye ST, Gushu, Xixiang, Baoan, Shenzhen, China</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_copyright">
+          <p>Copyright. 2019 <b>Novelworks</b>. All right reserved</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- javascript -->  
+  <script src="../js/common/jquery-3.6.0.min.js"></script>
+  <script src="../js/common/jquery-ui.min.js"></script>
+</body>
+</html>
