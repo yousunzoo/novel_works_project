@@ -1,8 +1,4 @@
-html, body {
-  font-family:'Lato', 'Noto Sans', 'Nanum Gothic', sans-serif;
-  font-size: 16px;
-  color:#222;
-}
+
 
 .clearfix:after,
 .clearfix::after {
