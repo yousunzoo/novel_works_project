@@ -46,6 +46,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-a {display:block; text-decoration: none;}
+a, strong {display:block; text-decoration: none;}
 
 button {border:none; outline:none; background:none;}

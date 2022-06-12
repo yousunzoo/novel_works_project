@@ -24,3 +24,6 @@ html, body {
 .blind_area button>span,
 .blind {display: block; position:absolute;
 z-index: -1; width: 0; height: 0; overflow: hidden;}
+
+.fc-green {color:var(--main_01)}
+.fc-blue {color:var(--main_02)}
