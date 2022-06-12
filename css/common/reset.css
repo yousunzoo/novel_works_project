@@ -46,7 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-a, span, strong {display:block; text-decoration: none;}
+a, span, strong {display:block; text-decoration: none; color:inherit}
 
 button {border:none; outline:none; background:none;}
 
