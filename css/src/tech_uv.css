@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* tech_uv.css */
+
+@import url("../common/a_wrap.css");
+@import url("../common/page/b_header_sub.css");
+@import url("../common/page/b_footer_sub.css");
+
+@media all {
+  #banner {background-image: url("../../images/tech/sub_visual_technology.jpg");}
+
+  .sub_top_img_uv {position:relative; height: 560px;
+  background: url("../../images/tech/uv_top_img.jpg") center no-repeat;}
+
+  .sub_top_tit {padding:125px 0 125px 8.5%;}
+  .sub_top_tit h4 {font-size: 50px; line-height:75px; letter-spacing: -0.5px;}
+  .sub_top_tit p {font-size: 30px; line-height:56px; font-weight: 400;}
+
+  .sub_top_txt {position:absolute; bottom:0; left:0; padding:56px 90px 20px 40px; background-color: #f9f9f9;}
+  .sub_top_txt p {position:relative; font-size: 18px; line-height:26px; letter-spacing:-0.5px; padding-left:30px; margin:8px 0; font-weight: 400;}
+  .sub_top_txt p:before,
+  .sub_top_txt p::before {content:""; position:absolute; left:0; top:5px; display: block; width: 17px; height: 14px; background: url("../../images/tech/uv_top_check.png") center no-repeat;}
+
+  .uv_txt_con {padding-top:150px;}
+  .uv_img {float:left; width: 420px; height:auto;}
+  .uv_img img {width: 100%; height: 100%;}
+  .uv_txt {float:right; padding-left:7%; box-sizing: border-box;letter-spacing:-0.5px}
+  .uv_txt h5 {font-size: 24px; font-weight: 500;}
+  .uv_txt p {padding-top:30px; line-height:1.8; font-weight: 300; word-break: keep-all; color:#666; }
+
+  .uv_con_01 {padding-top:60px;}
+  .uv_con_01 h5 {margin-bottom:30px; text-align:center; font-size: 24px; line-height:30px; letter-spacing: -0.5px; font-weight: 600;}
+  .uv_con_01 img {max-width: 100%;}
+
+  .uv_table_wrap {margin-top:100px}
+  .uv_tbl {width: 100%;}
+  .uv_tbl td, .uv_tbl th {vertical-align: middle;}
+  .uv_tbl thead th:first-child {border-left:none; }
+  .uv_tbl thead th {padding:20px 0; border:1px solid #ddd; border-right:none;
+    letter-spacing:-0.5px; font-weight: 400;
+    background-color: var(--table);}
+  .uv_tbl tbody th {border:1px solid #ddd; border-left:none; font-size: 20px;
+    letter-spacing: -0.5px; vertical-align: middle;}
+  .uv_tbl tbody td {padding:20px 0;font-size: 16px;; line-height:30px; letter-spacing: -0.5px; text-align:center; border:1px solid #ddd; border-left:none; vertical-align: middle; }
+  .uv_tbl tbody .application {padding-left:5%; text-align: left; border-right:none;}
+  
+  .uv_con_02 {margin-top:100px;}
+  .uv_con_02_img {position:relative;}
+  .uv_con_02_txt {position:absolute; bottom:0; width:100%; padding:45px 40px; box-sizing: border-box; background-color: rgba(0,0,0,0.7);}
+  .uv_con_02_txt {color:#fff; letter-spacing: -0.5px;}
+  .uv_con_02_txt .ut_txt_01 {font-size: 18px; line-height:32px;}
+  .uv_con_02_txt .ut_txt_02 {margin-top:10px; font-size: 30px; line-height:40px;}
+  .uv_con_02 .uv_tbl thead th {padding:30px 0;}
+  .uv_tbl thead th dl dd {font-weight: 800; margin-top:10px}
+  .uv_tbl thead th p {letter-spacing:-0.5px; font-size: 24px; vertical-align: middle;}
+  .uv_con_02 .uv_tbl tbody th {font-size: 16px; letter-spacing: -0.5px; font-weight: 400; line-height:30px}
+  .uv_con_02 .uv_tbl tbody td:last-child {border-right:none}
+}

@@ -51,3 +51,5 @@ z-index: -1; width: 0; height: 0; overflow: hidden;}
 #sideMenu .snb li a:hover {font-weight:600; color:var(--main_02)}
 #sideMenu .snb .on {border-bottom:2px solid var(--main_02)}
 #sideMenu .snb .on a {color:var(--main_02)}
+
+.max_area {max-width: 1100px; margin:auto;}
