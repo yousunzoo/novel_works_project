@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* business_development.css */
+
+@import url("../common/a_wrap.css");
+@import url("../common/page/b_header_sub.css");
+@import url("../common/page/b_footer_sub.css");
+
+@media all {
+  #banner {background-image: url("../../images/business/sub_visual_business.jpg");}
+
+  .tabmenu {padding-top:80px; position:relative;}
+  .develop_tab {position:absolute; top:0; left:0; width: 100%; max-width:1100px; margin:0 auto; z-index:10; }
+  .develop_tab ul {text-align: center;}
+  .develop_tab li {float:left; width: 25%; margin-left: -1px;}
+  .develop_tab li a {height: 78px; line-height:78px; letter-spacing: -0.5px;  background-color: #fff;  border:1px solid #c2c2c2; border-bottom:1px solid var(--main_02);}
+  .develop_tab li.on {z-index:1;}
+  .develop_tab li.on a {border-color:var(--main_02); border-bottom-color:#fff} 
+}
