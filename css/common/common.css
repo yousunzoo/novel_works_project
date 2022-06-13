@@ -26,6 +26,9 @@ z-index: -1; width: 0; height: 0; overflow: hidden;}
 
 .middle_line {display: inline-block; width: 30px; height: 2px;  margin:20px 0;}
 
+.sub_page {padding:125px 0 200px;}
+#content {padding-bottom:100px; background:#fff url("../../images/common/sub_page/sub_con_cm_bg.jpg") center bottom no-repeat; background-size: contain;}
+/* banner */
 #banner {width: 100%; height: 480px; background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;}
 #banner .banner_txt_con {
   position:relative; display:table; width: 100%; max-width:1320px; height:100%;
@@ -36,4 +39,15 @@ z-index: -1; width: 0; height: 0; overflow: hidden;}
 #banner .banner_tit {font-size: 80px; font-weight: 900; letter-spacing: 0.5px;}
 #banner .location {overflow:hidden; padding-top:50px;}
 #banner .location ul li {display:inline-block; font-size: 15px;}
-#banner .location .first_route:before {display: inline-block; content:">"; vertical-align: middle; margin:0 18px 0 20px; font-family: "Nanum Gothic"; color:#fff; font-size: 15px;}
+#banner .location .first_route:before,
+#banner .location .second_route:before {display: inline-block; content:">"; vertical-align: middle; margin:0 18px 0 20px; font-family: "Nanum Gothic"; color:#fff; font-size: 15px;}
+
+/* sideMenu */
+#sideMenu {width: 100%;}
+#sideMenu .side_menu_inner {text-align: right; padding:0 15px; box-sizing: border-box;}
+#sideMenu .side_menu_inner .snb {display: inline-block; padding-right:10%;}
+#sideMenu .snb li {float:left; max-width: 200px; margin:0 20px; }
+#sideMenu .snb li a {display: table; height:60px; line-height:60px; font-size: 20px; letter-spacing: -0.5px; padding:0 14px;}
+#sideMenu .snb li a:hover {font-weight:600; color:var(--main_02)}
+#sideMenu .snb .on {border-bottom:2px solid var(--main_02)}
+#sideMenu .snb .on a {color:var(--main_02)}
