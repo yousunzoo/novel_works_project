@@ -27,7 +27,7 @@ z-index: -1; width: 0; height: 0; overflow: hidden;}
 .middle_line {display: inline-block; width: 30px; height: 2px;  margin:20px 0;}
 
 .sub_page {padding:125px 0 200px;}
-#content {padding-bottom:100px; background:#fff url("../../images/common/sub_page/sub_con_cm_bg.jpg") center bottom no-repeat; background-size: contain;}
+#content {max-width:100%; padding-bottom:100px; background:#fff url("../../images/common/sub_page/sub_con_cm_bg.jpg") center bottom no-repeat; background-size: contain;}
 /* banner */
 #banner {width: 100%; height: 480px; background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;}
 #banner .banner_txt_con {
