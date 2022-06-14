@@ -56,3 +56,5 @@ input,select {background: none; border:none;}
 textarea {border:none;
 	font-family:inherit;
 	color:inherit; }
+
+em {font-style: normal;}

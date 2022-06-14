@@ -2,6 +2,8 @@
 
 @media all and (min-width:1440px) {
   /* 기준 디바이스 크기 : 1440px */
+  #wrap {min-width: 1440px;}
+
   
   
   }
