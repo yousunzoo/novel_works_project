@@ -3,7 +3,7 @@
 @media all and (min-width:1440px) {
   /* 기준 디바이스 크기 : 1440px */
   #wrap {min-width: 1440px;}
-
+  .header_gnb_menu {height:auto;}
   /* mainContent2 */
   .process_list li {height:250px;}
 

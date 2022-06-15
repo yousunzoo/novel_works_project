@@ -1,6 +1,6 @@
 @media all {
    /* header */
- header {position:absolute; width: 100%; height:100px; z-index:100; }
+ header {position:absolute; width: 100%; height:100px; z-index:1000; }
  .header_inner {position:absolute; width: 100%; height: 100%; padding:0 15px; box-sizing: border-box;}
  .header_inner .logo {position:absolute; display: block; width: 180px; height: 100px; z-index:100;}
  .header_inner .logo a {display:block; width: 100%; height: 100%;}
@@ -24,10 +24,20 @@
  .header_gnb_menu > li {position:relative; float:left; text-transform: uppercase;}
  .header_gnb_menu > li > a {padding: 0 32px; height:100px; line-height:100px;
  font-size: 15px; font-weight:600; letter-spacing: -0.5px; color:var(--gray_01)}
- .header_gnb_menu > li > a:hover {border-bottom:1px solid #333;}
+ .header_gnb_menu > li > a:before {position:absolute; bottom:0; left:50%; display:block; content:''; width:0; height:2px; background-color: #222; transition:all 300ms}
+
+
  /* gnb_submenu */
  #gnbBg {display:none; position:absolute; top:100px; width: 100%; height: 230px; z-index:0; background-color: #fff;}
  .header_gnb_menu > li > .gnb_2dep {display:none; position:absolute; top:100px; left:0px; z-index:99; width: 100%; height: 230px;}
  .header_gnb_menu > li > .gnb_2dep  > ul {padding:27px 0}
  .gnb_2dep li a {width: 100%; line-height:35px; text-align: center; color:#999; font-size: 15px; font-weight: 400; letter-spacing:-0.25px}
+ 
+ /* gnb_overlay_bg */
+ .gnb_overlay_bg {display:none; opacity:1; position:fixed; top:0; left:0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); z-index:90;}
+
+ /* hover 시 수행할 기능 */
+ .header_gnb_menu > li:hover > a {color:#222}
+ .header_gnb_menu > li:hover > a:before {width: 100%; margin-left:-50%;}
+ .gnb_2dep li a:hover {color:#222}
 }
