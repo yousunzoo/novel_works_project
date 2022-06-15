@@ -84,37 +84,19 @@
     .process_list .active .dot::before {position:absolute; top:50%; left:50%; transform: translateX(-50%) translateY(-50%); content:''; width: 15px; height: 15px; border-radius: 15px; border : 1px solid var(--main_02) }
 
     /* mainContent3 */
-  #mainContent3 {position:relative; width: 100%; height:auto; padding-top:190px; box-sizing: border-box; overflow-x: hidden;}
-  .main_develop_tit {width: 80%; margin:auto; padding-left:12%; margin-bottom:30px; font-size: 20px; font-weight: 600; line-height:30px; }
+    .main_develop_txt {padding-left:4%; margin-left:5%;}
+    .main_develop_txt_inner {padding-left:10%;}
+    .main_develop_txt .develop_prd_img {left:-8%; width: 15%;}
+    .main_develop_txt_inner .txt_01 {width: 45%; font-size: 60px; padding-right:2%;}
+    .main_develop_txt_inner .txt_02 {width: 48%; font-size: 15px;}
+    .main_develop_li_02 .txt_01 {width:38%; font-size: 30px;}
+    .main_develop_li_02 .txt_02 {width: 55%;}
+    .main_develop_li_02 .develop_prd_img {left:-7%; width: 14%;}
+    .main_develop_li_03 .main_develop_txt_inner {padding-left:0;}
+    .main_develop_li_03 .txt_01 {width: 100%;}
+    .develop_more_btn {position:absolute; top:-40px; right:-40px; width: 80px; height: 80px;  border-radius: 50%;}
+    .develop_more_btn i {line-height:80px; font-size: 25px;}
 
-  .main_develop_con {position:relative; width: 80%; height: 350px; margin:auto }
-  .main_develop_button {position:absolute; top:50%; transform:translateY(-50%); width: 100%;}
-  .main_develop_button button {font-size: 35px; z-index:99;}
-  .main_develop_button .next {float:right}
-  .main_develop_button .prev {float:left}
-  .main_develop_txt {position:absolute;
-    width: 80%; top:72%;}
-  .main_develop_txt li {z-index:99; height: auto; background-color: var(--background); }
-  .main_develop_txt .develop_prd_img {position: absolute; width: 15%; bottom:0;}
-  .main_develop_txt_inner {padding: 40px 0 0 150px; }
-  .main_develop_txt_inner p {display: inline-block; height: 100%;vertical-align: top;}
-  .main_develop_txt_inner .txt_01 {width: 42%; font-size: 60px; font-weight: 900; letter-spacing: -0.25px;}
-  .main_develop_txt_inner .txt_02 {line-height : 1.8; width: 50%; font-size: 15px; letter-spacing: -0.5px; font-weight: 500; word-break:keep-all;}
-  .main_develop_li_02 .main_develop_txt_inner {padding-top:60px;}
-  .main_develop_li_02 .txt_01 {width:30%; font-size: 30px; }
-  .main_develop_li_02 .txt_02 {width: 60%}
-  .main_develop_li_03 .main_develop_txt_inner {padding-left:65px; padding-top:40px;}
-  .main_develop_li_03 .txt_01 {display:block; width: 100%; text-align: left;}
-  .develop_more_btn {position:absolute; top:-40px; right:-40px; width: 80px; height: 80px; border-radius: 50%; text-align:center; color: #fff; background-color: var(--main_02);}
-  .develop_more_btn i {line-height:80px; font-size: 25px;}
-  .main_develop_wrapper {position:absolute; left:50%; transform:translateX(-50%); margin:auto; width: 300%;}
-  .develop_slide {float:left; width: 28%; height: 100%; margin:0 2.65%;}
-  .develop_slide .develop_img {width: 100%; height: 100%;}
-  .develop_slide .develop_img img {width: 100%; height: 100%;}
-
-  /* mainContent3 .active */
-  .main_develop_txt li {display: none;}
-  .main_develop_txt .active {display: block;}
 
   /* mainContent4 */
   
