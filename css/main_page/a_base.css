@@ -197,7 +197,7 @@
     .modal_pop_inner {position:relative; top:50%; transform:translateY(-50%); width: 96%; max-width: 1000px; margin:20px auto; background-color: #fff;}
 
     #siteMapCon h1 {height: 60px; line-height: 60px; font-size: 24px; font-weight: 600; letter-spacing: -0.5px; text-align: center; background-color: var(--main_02); color:#fff}
-    .modal_close_btn {position:absolute; top:11px; right:10px; font-size: 30px; color:#fff;}
+    .modal_close_btn {position:absolute; top:11px; right:10px; font-size: 30px; color:#fff; cursor: pointer;}
     .sitemap_wrapper {padding:30px;}
     .sitemap_wrapper > ul > li {float:left; width: 20%; text-align: center;}
     .sitemap_wrapper > ul > li > h2 {margin:0 2% 20px 2%; padding-bottom:20px; border-bottom:1px solid #888; letter-spacing:-1px; font-weight: 500; text-transform: uppercase;}

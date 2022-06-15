@@ -17,7 +17,7 @@
  .header_lang .selected a {
    color:#fff;
    background: linear-gradient(90deg, #2BB673, #0BA9B5);}
- .site_map {float:right; font-size: 30px; color:#666; line-height:40px; }
+ .site_map {float:right; font-size: 30px; color:#666; line-height:40px; cursor:pointer }
 
  #gnb {position:absolute; width: 100%; z-index:99; }
  .header_gnb_menu {width: 950px; height: 100%; margin:auto;}

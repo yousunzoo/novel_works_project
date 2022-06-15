@@ -12,6 +12,9 @@ const gnbBg = gnb.find('#gnbBg');
 const gnbLi = gnb.find('li');
 const gnb2dep = gnbLi.find('.gnb_2dep');
 const gnbOverlay = header.find('.gnb_overlay_bg');
+const siteMap = header.find('.site_map');
+const siteMapModal = wrap.find('.modal_pop_wrapper');
+const modalClose = siteMapModal.find('.modal_close_btn');
 let time = 300;
 
 //함수
@@ -40,12 +43,15 @@ gnbLi.children('a').on('focus', showGnb);
 gnbLi.on('mouseout',hideGnb);
 gnbLi.children('a').on('blur', hideGnb);
 
+//sitemap
+siteMap.on('click', function(e){
+  e.preventDefault();
+  siteMapModal.stop().fadeIn(time);
+});
 
-
-
-
-
-
-
+modalClose.on('click', function(e){
+  e.preventDefault();
+  siteMapModal.stop().fadeOut(time);
+});
 
 })(jQuery);
