@@ -4,9 +4,6 @@
   /* 기준 디바이스 크기 : 1440px */
   #wrap {min-width: 1440px;}
   .header_gnb_menu {height:auto;}
-  /* mainContent2 */
-  .process_list li {height:250px;}
-
 
   /* mainContent1 */
   /* transition 기능 */
@@ -28,6 +25,10 @@
   #mainContent1 .main_company_con.active .move_up {opacity:1; transform: translateY(0);}
   #mainContent1 .main_company_con.active .move_down {opacity:1; transform: translateY(0);}
 
+
+    
+  /* mainContent2 */
+  .process_list li {height:250px;}
 
   /* mainContent4 */
 
