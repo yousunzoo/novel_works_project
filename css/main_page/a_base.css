@@ -102,16 +102,16 @@
   
   .process_list ul {width: 92%; padding:0 4%;}
   .process_list li {float:left; position:relative; width:12.5%; text-align: center;}
-  .process_list li .icon {position:absolute; top:0; left:0; width: 100%;}
+  .process_list li .icon {position:absolute; top:0; left:0; width: 100%; transition:all 1s ease;}
   .process_list li .dot {position:absolute; top:50%; left:50%; transform: translateX(-50%) translateY(-50%); width: 9px; height: 9px; border-radius:9px; background-color: var(--gray_02);}
   .process_list li strong {position:absolute; bottom:0; left:0; display: inline-block; width: 100%; font-size: 24px; letter-spacing: -0.5px;font-weight: 400}
   .process_list li strong em {display: block; margin-bottom:20px; width: 100%; font-size: 15px;}
 
   /* process_list .active */
-  .process_list .active .icon {margin-top:-20px; transition-property:margin-top; transition-duration:1000ms; transition-timing-function: ease;}
+  .process_list .active .icon {margin-top:-20px; }
   .process_list .active .dot {background-color: var(--main_02);}
-  .process_list .active .dot:before,
-  .process_list .active .dot::before {position:absolute; top:50%; left:50%; transform: translateX(-50%) translateY(-50%); content:''; width: 15px; height: 15px; border-radius: 15px; border : 1px solid var(--main_02) }
+  .process_list .dot::before {position:absolute; top:50%; left:50%; transform: translateX(-50%) translateY(-50%); content:''; width: 15px; height: 15px; border-radius: 15px; border : 1px solid var(--main_02); opacity:0; transition:opacity 500ms ease }
+  .process_list .active .dot::before {opacity:1;}
 
   /* mainContent3 */
   #mainContent3 {position:relative; width: 100%; height:auto; padding-top:190px; box-sizing: border-box;}
