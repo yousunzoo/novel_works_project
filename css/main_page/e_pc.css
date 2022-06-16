@@ -28,7 +28,15 @@
 
     
   /* mainContent2 */
-  .process_list li {height:250px;}
+  .process_list li.move_left {height:250px; opacity:0; transform:translateX(-50px); transition: all 1000ms ease;}
+  .process_list li.process02 {transition-delay: 300ms;}
+  .process_list li.process03 {transition-delay: 500ms;}
+  .process_list li.process04 {transition-delay: 700ms;}
+  .process_list li.process05 {transition-delay: 900ms;}
+  .process_list li.process06 {transition-delay: 1100ms;}
+  .process_list li.process07 {transition-delay: 1300ms;}
+  .process_list li.process08 {transition-delay: 1500ms;}
+  .active .process_list li.move_left {opacity: 1; transform: translateX(0);}
 
   /* mainContent4 */
 
