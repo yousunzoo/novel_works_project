@@ -1,6 +1,6 @@
 /* d_laptop.css */
 
-@media all and (min-width:1024px) and (max-width:1339px) {
+@media all and (min-width:1024px) and (max-width:1439px) {
   /* 기준 디바이스 크기 : 1024px */
   #wrap {min-width:1024px; min-height:100vh;}
 
@@ -27,6 +27,18 @@
   .down_con1 .company_inner .txt_con {padding:20px 45px;}
   .down_con1 .company_inner .txt_con li {font-size: 15px; line-height:1.6;}
   .down_con2 .company_inner {width: 100%; height: 175px;}
+
+  /* mainContent1 transition */
+  #mainContent1 .main_company_con .m_move_down {opacity: 0; transform: translateY(-50px); transition: transform 500ms ease, opacity 500ms ease;}
+
+  #mainContent1 .main_company_con .m_move_down_02 {transition-delay: 300ms;}
+  #mainContent1 .main_company_con .m_move_down_03 {transition-delay: 600ms;}
+  #mainContent1 .main_company_con .m_move_down_04 {transition-delay: 900ms;}
+  #mainContent1 .main_company_con .m_move_down_05 {transition-delay: 1200ms;}
+
+  #mainContent1 .main_company_con.active .m_move_down {opacity:1; transform: translateY(0);}
+
+
 
     /* mainContent2 */
     .process_list li {height:200px;}
