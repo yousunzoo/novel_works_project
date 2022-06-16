@@ -8,6 +8,27 @@
   .process_list li {height:250px;}
 
 
+  /* mainContent1 */
+  /* transition 기능 */
+  #mainContent1 .main_company_con .move_left {opacity:0; transform:translateX(-50px); transition:transform 800ms ease, opacity 800ms ease}
+  #mainContent1 .main_company_con .move_right {opacity: 0; transform: translateX(50px); transition:transform 800ms ease, opacity 800ms ease}
+  #mainContent1 .main_company_con .move_up {opacity: 0; transform: translateY(50px); 
+    transition:transform 800ms ease, opacity 800ms ease}
+  #mainContent1 .main_company_con .move_down {opacity: 0; transform: translateY(-50px); 
+    transition:transform 800ms ease, opacity 800ms ease}
+
+  #mainContent1 .main_company_con .move_up_02 {transition-delay: 400ms;}
+  #mainContent1 .main_company_con .move_right_03 {transition-delay: 800ms;}
+  #mainContent1 .main_company_con .move_down_04 {transition-delay: 1200ms;}
+  #mainContent1 .main_company_con .move_right_05 {transition-delay: 1600ms;}
+
+  /* active */
+  #mainContent1 .main_company_con.active .move_left {opacity:1; transform: translateX(0);}
+  #mainContent1 .main_company_con.active .move_right {opacity:1; transform: translateX(0);}
+  #mainContent1 .main_company_con.active .move_up {opacity:1; transform: translateY(0);}
+  #mainContent1 .main_company_con.active .move_down {opacity:1; transform: translateY(0);}
+
+
   /* mainContent4 */
 
   .consult_div {width: 1100px; height: 420px;}
