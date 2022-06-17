@@ -130,12 +130,11 @@
   .main_develop_tit {width: 80%; margin:auto; padding-left:12%; margin-bottom:30px; font-size: 20px; font-weight: 600; line-height:30px; }
 
   .main_develop_wrapper {position:relative; width: 80%; margin:auto }
-  .main_develop_button {position:absolute; top:50%; transform:translateY(-50%); width: 100%;}
-  .main_develop_button button {font-size: 35px; z-index:99;}
-  .main_develop_button .next {float:right}
-  .main_develop_button .prev {float:left}
-  .develop_slide_track {overflow: visible;}
-  .develop_slider {position:relative; display:block; width: 300%; left:50%; transform: translateX(-50%);}
+  .main_develop_wrapper button {position:absolute; top:50%; transform:translateY(-50%); font-size: 35px; cursor:pointer; z-index:1;}
+  .main_develop_wrapper .next {position:absolute; right:0;}
+  .main_develop_wrapper .prev {position:absolute; left:0;}
+  .develop_slide_track {position:relative; overflow: visible; }
+  .develop_slider {position:relative; display:block; width: 300%; left:50%; transform: translateX(-50%); }
   .develop_slide {float:left; width: 28%; height: 100%; margin:0 2.65%;}
   .develop_slide .develop_img {width: 100%; height: 100%;}
   .develop_slide .develop_img img {width: 100%; height: 100%;}
