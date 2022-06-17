@@ -79,5 +79,22 @@
     };
   }); //mouseup
 
+  // touch 이벤트
+  touchArea.on('touchstart', function(e){
+    startX = parseInt(e.originalEvent.touches[0].clientX);
+    // console.log(startX);
+  }); //touchstart
+
+  touchArea.on('touchend', function(e){
+    endX = parseInt(e.originalEvent.changedTouches[0].clientX);
+    let resultX = startX - endX;
+    // console.log(resultX);
+
+    if(resultX > 100){
+      devSliderNextFn()
+    } else if (resultX < -100){
+      devSliderPrevFn()
+    };
+  }); //touchend
 
 })(jQuery);
