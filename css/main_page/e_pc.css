@@ -42,7 +42,8 @@
 
   .main_develop_txt ul {position:relative; min-height:150px;}
   
-  .main_develop_txt li {position:absolute; top:0; left:0; width:100%; height:100%; z-index:998; }
-  .main_develop_txt li .main_develop_txt_inner {opacity:0; transition:opacity 600ms ease}
+  .main_develop_txt li {position:absolute; top:0; left:0; width:100%; height:100%; }
+  .main_develop_txt li .main_develop_txt_inner {opacity:0; transition:opacity 1s ease}
+  .main_develop_txt li.active {z-index:1}
   .main_develop_txt li.active .main_develop_txt_inner {opacity:1}
   }
