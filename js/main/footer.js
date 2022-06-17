@@ -1,15 +1,14 @@
 // footer.js
 // link 누를 때 해당 modal 창 띄우기
 (function($){
-// 변수
-const footer = $('footer');
-const footerLinkList = footer.find('.footer_top').children('ul');
-const footerLink = footerLinkList.children('li');
-const modal = $('.modal_pop_wrapper');
-let modalInner = modal.find('.modal_pop_inner');
-let closeBtn = modalInner.find('.modal_close_btn');
+  // 변수
+  const footer = $('footer');
+  const footerLinkList = footer.find('.footer_top').children('ul');
+  const footerLink = footerLinkList.children('li');
+  const modal = $('.modal_pop_wrapper');
+  let modalInner = modal.find('.modal_pop_inner');
 
-const privacy = `<section class="footer_modal_con privacy">
+  const privacy = `<section class="footer_modal_con privacy">
 <button type="button" class="modal_close_btn">
   <i class="fa-solid fa-xmark"></i>
 </button>
@@ -18,13 +17,13 @@ const privacy = `<section class="footer_modal_con privacy">
   <p><a href="https://www.privacy.go.kr/a3sc/per/inf/perInfStep02.do">https://www.privacy.go.kr/a3sc/per/inf/perInfStep02.do</a></p>
   <p>이 주소로 들어가셔서 맟춤형 개인정보 처리방침을 만들어서 등록하세요</p>
 </div>
-</section>`;
-const terms = `<section class="modal_modal_con editor">
+  </section>`;
+  const terms = `<section class="footer_modal_con editor">
 <button type="button" class="modal_close_btn">
   <i class="fa-solid fa-xmark"></i>
 </button>
 <h1>이용약관</h1>
-<div class="-">
+<div class="footer_inner_box">
   <p>'ooo' 은 (이하 '회사'는) 고객님의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호"에 관한 법률을 준수하고 있습니다.
     회사는 개인정보취급방침을 통하여 고객님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.
     <br><br>
@@ -105,8 +104,8 @@ const terms = `<section class="modal_modal_con editor">
     1.개인정보침해신고센터 (www.1336.or.kr/국번없이 118) 2.정보보호마크인증위원회 (www.eprivacy.or.kr/02-580-0533~4) 3.대검찰청 인터넷범죄수사센터 (http://icic.sppo.go.kr/02-3480-3600) 4.경찰청 사이버테러대응센터 (www.ctrc.go.kr/02-392-0330)
     </p>
 </div>
-</section>`;
-const location = `<section id="siteMapCon">
+  </section>`;
+  const location = `<section id="siteMapCon">
 <button type="button" class="modal_close_btn">
   <i class="fa-solid fa-xmark"></i>
 </button>
@@ -161,8 +160,8 @@ const location = `<section id="siteMapCon">
     </li>
   </ul>
 </article>
-</section>`
-let link = [privacy, terms, location];
+  </section>`
+  let link = [privacy, terms, location];
 
 // event
 footerLink.on('click', function(e){
@@ -172,5 +171,11 @@ footerLink.on('click', function(e){
   modal.stop().fadeIn();
 });
 
+
+$(document).on('click', '.modal_close_btn', function(e){
+  e.preventDefault();
+  modal.stop().fadeOut();
+
+})
 
 })(jQuery);
