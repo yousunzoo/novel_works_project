@@ -17,22 +17,21 @@
   const devSlider = slideTrack.find('.develop_slider');
   let devSlideLi = devSlider.find('.develop_slide');
   const txtSlider = mainContent3.find('.main_develop_txt').children('ul');
-  const txtSlideLi = txtSlider.find('li');
+  let txtSlideLi = txtSlider.find('li');
+  const touchArea = mainContent3.find('.main_develop_image');
 
   // function
   function devSliderNextFn(){
     devSlider.stop().animate({'marginLeft':-100+'%'}, "slow", 'easeInOutQuad', function(){
-    devSlideLi.eq(0).appendTo(devSlider);
-    devSlider.css({'marginLeft':0});
-    devSlideLi = devSlider.find('.develop_slide');
-    
-
-  });
-  
-  let txtLiActive = txtSlider.find('li.active');
-  txtLiActive.removeClass('active');
-  txtLiActive.next().addClass('active');
-  txtLiActive.appendTo(txtSlider);
+      devSlideLi.eq(0).appendTo(devSlider);
+      devSlider.css({'marginLeft':0});
+      devSlideLi = devSlider.find('.develop_slide');
+      
+      let txtLiActive = txtSlider.find('li.active');
+      txtLiActive.removeClass('active');
+      txtLiActive.next().addClass('active');
+      txtLiActive.appendTo(txtSlider); 
+    });
   } // devSliderNextFn();
 
   function devSliderPrevFn(){
@@ -40,6 +39,12 @@
       devSlideLi.eq(-1).prependTo(devSlider);
       devSlider.css({'marginLeft':0});
       devSlideLi = devSlider.find('.develop_slide');
+
+      let txtLiActive = txtSlider.find('li.active');
+      txtSlideLi.eq(-1).prependTo(txtSlider);
+      txtSlideLi = txtSlider.find('li');
+      txtLiActive.removeClass('active');
+      txtLiActive.prev().addClass('active');
       });
   }; //devSliderPrevFn()
 
@@ -56,7 +61,23 @@
     devSliderPrevFn();
   });
 
-  //
+  // drag 했을 때의 이벤트
+  touchArea.on('mousedown', function(e){
+    e.preventDefault();
+    startX = e.clientX;
+  }); //mousedown
+
+  touchArea.on('mouseup', function(e){
+    e.preventDefault();
+    endX = e.clientX;
+    let resultX = startX - endX;
+
+    if(resultX > 100){
+      devSliderNextFn()
+    } else if (resultX < -100){
+      devSliderPrevFn()
+    };
+  }); //mouseup
 
 
 })(jQuery);
