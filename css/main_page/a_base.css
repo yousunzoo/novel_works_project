@@ -158,8 +158,6 @@
 
 
   /* mainContent3 .active */
-  .main_develop_txt li {display:none; height:100%; z-index:998; opacity:0; transition:opacity 800ms ease 0s;}
-  .main_develop_txt .active {display:block; opacity:1; z-index:999}
 
   /* mainContent4 */
   #mainContent4 {width: 100%; margin-top:-150px; padding-top:400px; padding-bottom:250px; background-color: var(--background);

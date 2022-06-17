@@ -16,38 +16,47 @@
   const slideTrack = mainContent3.find('.develop_slide_track');
   const devSlider = slideTrack.find('.develop_slider');
   let devSlideLi = devSlider.find('.develop_slide');
-  const txtSlider = slideTrack.find('.main_develop_txt');
+  const txtSlider = mainContent3.find('.main_develop_txt').children('ul');
   const txtSlideLi = txtSlider.find('li');
 
   // function
-  function NextFn(){
+  function devSliderNextFn(){
     devSlider.stop().animate({'marginLeft':-100+'%'}, "slow", 'easeInOutQuad', function(){
     devSlideLi.eq(0).appendTo(devSlider);
     devSlider.css({'marginLeft':0});
     devSlideLi = devSlider.find('.develop_slide');
-  });
-  } // NextFn();
+    
 
-  function PrevFn(){
+  });
+  
+  let txtLiActive = txtSlider.find('li.active');
+  txtLiActive.removeClass('active');
+  txtLiActive.next().addClass('active');
+  txtLiActive.appendTo(txtSlider);
+  } // devSliderNextFn();
+
+  function devSliderPrevFn(){
     devSlider.stop().animate({'marginLeft':100+'%'}, "slow", 'easeInOutQuad', function(){
       devSlideLi.eq(-1).prependTo(devSlider);
       devSlider.css({'marginLeft':0});
       devSlideLi = devSlider.find('.develop_slide');
       });
-  }; //PrevFn()
+  }; //devSliderPrevFn()
 
   // event
   // next 버튼 눌렀을 때 기능
   next.on('click', function(e){
     e.preventDefault();
-    NextFn();
+    devSliderNextFn();
   });
 
   // prev 버튼 눌렀을 때 기능
   prev.on('click', function(e){
     e.preventDefault();
-    PrevFn();
+    devSliderPrevFn();
   });
+
+  //
 
 
 })(jQuery);
