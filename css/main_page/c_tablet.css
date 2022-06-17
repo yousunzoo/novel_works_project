@@ -71,7 +71,7 @@
   .develop_slide {width: calc(100% / 3); margin:0}
 
   .main_develop_txt ul {height:215px;}
-  .main_develop_txt {width:100%; padding-left:0;  margin:0}
+  .main_develop_txt {position:static; width:100%; padding-left:0;  margin:0}
   .main_develop_txt_inner .txt_group {float:left; width: 65%; padding-left:7%;}
   .main_develop_txt li {
     width: 100%; padding:20px 15px 0; box-sizing: border-box; background-color: var(--background); }
