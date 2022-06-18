@@ -46,4 +46,28 @@
   .factory_right {float:right; width: 50%;}
   .factory_right ul {width: 100%;}
   .factory_right ul li {float:left; width: 46%; margin:0 2% 18px; }
+
+  /* modal_pop_up */
+  .modal_pop_wrapper {
+    display:none;
+    position:fixed; top:0; left:0; width: 100%; height: 100%; z-index:1100; background-color: rgba(0,0,0,0.8);}
+
+  .modal_pop_inner {position:relative; top:50%; transform:translateY(-50%); width: 96%; max-width: 1000px; min-height:200px; max-height:600px;  margin:20px auto; background-color: #fff;}
+
+  .modal_pop_wrapper h1 {height: 60px; line-height: 60px; font-size: 24px; font-weight: 600; letter-spacing: -0.5px; text-align: center; background-color: var(--main_02); color:#fff}
+  .modal_close_btn {position:absolute; top:11px; right:10px; font-size: 30px; color:#fff; z-index:1; cursor: pointer;}
+  .modal_close_btn:hover {color:#222}
+  .sitemap_wrapper, .footer_inner_box {padding:30px;}
+  .footer_modal_con p {font-size: 13px;}
+  .editor .footer_inner_box {height:300px;}
+  .editor .footer_inner_box p {height:auto; max-height:100%; overflow-y: scroll;padding:30px; box-sizing:border-box; padding:30px; border:1px solid #eee; line-height:1.6; word-break: keep-all; }
+  .footer_modal_con.privacy p {line-height:2;}
+  .footer_modal_con.privacy a {color:blue}
+  .footer_modal_con.privacy a:hover {text-decoration: underline;}
+
+  .sitemap_wrapper > ul > li {float:left; width: 20%; text-align: center;}
+  .sitemap_wrapper > ul > li > h2 {margin:0 2% 20px 2%; padding-bottom:20px; border-bottom:1px solid #888; letter-spacing:-1px; font-weight: 500; text-transform: uppercase;}
+  .sitemap_2dep {padding:0 5%;}
+  .sitemap_2dep a {padding:10px 0; color:#666; font-size: 13px; font-weight: 400; line-height:1.2}
+  .sitemap_2dep a:hover {color:#222; text-decoration: underline;}
 }
