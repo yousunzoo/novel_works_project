@@ -1,7 +1,7 @@
 @media all {
   /* header */
-header {position:absolute; width: 100%; height:100px; z-index:1000; }
-.header_inner {position:absolute; width: 100%; height: 100%; padding:0 15px; box-sizing: border-box;}
+header {position:absolute; width: 100%; height:100px; z-index:1000; transition:background-color 300ms ease }
+.header_inner {position:absolute; width: 100%; height: 100%; padding:0 15px; box-sizing: border-box; transition:all 300ms ease}
 .header_inner .logo {position:absolute; display: block; width: 180px; height: 100px; z-index:100;}
 .header_inner .logo a {display:block; width: 100%; height: 100%;}
 .header_inner .logo img {width: 100%; height: 100%; margin:0 3px;}
@@ -18,8 +18,7 @@ header {position:absolute; width: 100%; height:100px; z-index:1000; }
   color:#fff;
   background: linear-gradient(90deg, #2BB673, #0BA9B5);}
  .site_map {float:right; font-size: 30px; color:#666; line-height:40px; cursor:pointer }
- .site_map i {display:none; color:#fff;}
- .site_map i.fa-xmark {color:#222;}
+ .site_map i {display:none;}
  .site_map .active {display:inline-block;} 
  
 #gnb {position:absolute; width: 100%; z-index:99; }
@@ -43,6 +42,13 @@ font-size: 15px; font-weight:600; letter-spacing: -0.5px; color:var(--gray_01)}
 .header_gnb_menu > li:hover > a {color:#222}
 .header_gnb_menu > li:hover > a:before {width: 100%; margin-left:-50%;}
 .gnb_2dep li a:hover {color:#222}
+
+/* mobile 기기에서 스크롤y값 헤더높이 벗어나면 header 상단 고정 */
+header.fixed {position:fixed; top:0; left:0;}
+header.fixed .header_inner  {
+ background-color: #fff;
+ }
+
 }
 
 @media all and (max-width:767px) {

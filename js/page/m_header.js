@@ -2,11 +2,14 @@
 /** 기능구현
  * sitemap 버튼 클릭하면 gnb 메뉴 옆으로 슬라이드, sitemap 모양 바뀌도록
  * gnbLi click 하면 gnb2dep 나타나도록
+ * 스크롤 내릴 때 헤더 상단 고정 (class 'fixed' 부여)
  */
 
 (function($){
   const wrap = $('#wrap');
   const header = wrap.find('header');
+  const headerHeight = header.height();
+  console.log(headerHeight);
   const gnb = header.find('#gnb');
   const gnbBg = gnb.find('#gnbBg');
   const gnbLi = gnb.find('li');
@@ -54,5 +57,14 @@
   siteMap.children('i').on('click',siteMapFn);
   gnbLi.children('a').on('click', gnb2depOpen);
 
+  $(window).on('scroll', function(){
+    let windowTop = $(window).scrollTop();
+    // scroll 이동시 header 상단 고정
+    if(windowTop > 0){
+      header.addClass('fixed');
+    } else {
+      header.removeClass('fixed');
+    }
+  })
 
 })(jQuery);
