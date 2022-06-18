@@ -28,6 +28,7 @@
 
   const gnb2depOpen = function(e){
     e.preventDefault();
+    e.stopPropagation();
     // gnb2dep slideDown
     let gnb2dep = $(this).parent().find('.gnb_2dep');
     let moreIcon = $(this).find('.mobile_more_icon');
@@ -46,10 +47,7 @@
       moreIconOthers.html('<i class="fa-solid fa-plus"></i>');
       moreIconOthers.removeClass('active');
     }
-
-
-
-
+    $(this).unbind('click').click()
   };
 
   // event
