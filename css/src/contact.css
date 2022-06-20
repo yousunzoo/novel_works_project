@@ -6,6 +6,7 @@
 @import url("../common/page/b_footer_sub.css");
 
 @media all {
+  #wrap {min-width:320px;}
   #banner {background-image: url("../../images/contact/sub_visual_contact.jpg");}
   #content {padding:125px 0 200px; background: url("../../images/common/sub_page/sub_con_cm_bg.jpg") center bottom no-repeat;}
   .consult_div {max-width:530px; margin:auto;}
@@ -38,8 +39,10 @@
 }
 
 @media all and (max-width:767px){
+  #banner {height: 250px;}
   #banner .banner_sub_txt {font-size: 11px; padding-bottom: 10px;}
   #banner .banner_tit {font-size: 50px; letter-spacing: -0.25px;}
+  #banner .location {display: none;}
 
   #content {padding:45px 0 150px;}
   .consult_div {padding:0 15px}
