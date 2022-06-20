@@ -13,9 +13,11 @@
   .main_contact_inner {margin-top:50px;}
   .main_contact_inner div {width: 100%;}
   .information li {width: 100%; height: 40px; margin-bottom:25px; border-bottom:1px solid #ddd}
+  .information li:last-child {margin-bottom: 0;}
   .information li span {display:inline-block; width: 120px; vertical-align: middle; font-size: 15px; font-weight: 400;}
   .information li input {display:inline-block; text-indent:10px; padding:0; height: 40px; width: calc(530px - 130px); color: #aaa; font-size: 15px; vertical-align: middle;}
-  .information li select {padding-left:10px; height: 100%; font-size: 15px; color:#aaa;}
+  .information li input::placeholder {font-size: 15px; color:#aaa;}
+  .information li select {padding-left:5px; height: 100%; font-size: 15px; color:#aaa;}
 
   .qna {margin-top:35px; width: 100%;}
   .qna .tit {font-size: 15px; font-weight: 400; padding-bottom:15px;}
@@ -38,4 +40,25 @@
 @media all and (max-width:767px){
   #banner .banner_sub_txt {font-size: 11px; padding-bottom: 10px;}
   #banner .banner_tit {font-size: 50px; letter-spacing: -0.25px;}
+
+  #content {padding:45px 0 150px;}
+  .consult_div {padding:0 15px}
+  .main_contact_tit {font-size: 20px;}
+  .main_contact_inner {margin-top: 30px;}
+  .information li {height: 30px; margin-bottom: 15px;}
+  .information li span {width: 80px; font-size: 13px; font-weight: 500; letter-spacing: -0.5px;}
+  .information li input,
+  .information li select {width: calc(100% - 90px); font-size: 13px; height: 30px; font-weight: 500; letter-spacing: -0.5px;}
+  .information li input::placeholder {font-size: 13px;}
+
+  .qna {margin-top: 15px;}
+  .qna .tit {font-size: 13px; line-height: 30px; padding-bottom:0}
+  #qna_content {padding:15px; height:130px; font-size: 13px;}
+  .contact_privacy_con {margin-top: 15px; height: 20px; line-height: 20px;}
+  .contact_privacy_ex {display: none;}
+  .contact_privacy_con .contact_check_btn {height: 20px; line-height: 20px;}
+  .contact_check_btn label {font-size: 12px; height: 20px; line-height: 20px;}
+  .contact_check_btn label i {margin-left:7px; font-size: 20px;}
+  .contact_btn {margin-top: 15px; height: 45px; font-size: 13px;}
 }
+
