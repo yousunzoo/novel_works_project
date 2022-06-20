@@ -28,30 +28,11 @@
 }
 
 @media all and (max-width:767px){
-  #banner {height: 250px;}
-  #banner .banner_sub_txt {font-size: 11px; padding-bottom: 10px;}
-  #banner .banner_tit {font-size: 50px; letter-spacing: -0.25px;}
-  #banner .location {display: none;}
-
-  #sideMenu {height:60px;}
-  #sideMenu .side_menu_inner {padding:0;}
-  #sideMenu .side_menu_inner .snb {width: 100%; padding-right:0}
-  #sideMenu .snb li {width:50%; max-width: 384px; margin:0; text-align: center;}
-  #sideMenu .snb li.on {position:relative;}
-  #sideMenu .snb li a {width: 100%; padding:0; height: 58px; font-size: 15px;line-height:60px; letter-spacing: -0.5px; font-weight: 400; border-bottom:2px solid #e5e5e5;}
-
-  #sideMenu .snb .on {border-bottom:none}
-  #sideMenu .snb .on a:before {position:absolute; bottom:0; left:50%; margin-left:-25px; display: block; content:''; width: 50px; height: 2px; background-color: var(--main_02);}
-
-  #content {padding-bottom: 0;}
-  .sub_page {padding:45px 0 150px;}
   .popup_gallery li {width: 48%;}
   .property_gallery_tit {height:30px; line-height: 30px; font-size: 15px; padding-top:10px}
 
 }
 
 @media all and (max-width:1120px) {
-  .max_area {padding:0 15px;}
   .modal_title {line-height: 18px; word-wrap:break-word; font-size: 13px;}
-  #sideMenu .side_menu_inner .snb {padding-right: 0;}
 }
