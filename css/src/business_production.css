@@ -47,3 +47,16 @@
   .li_inner .txt_con .tit {padding-top: 40px; width: 100%; font-weight: 400; font-size: 24px; letter-spacing: -0.5px;}
   .li_inner .txt_con .txt {padding-top: 10px; font-size: 15px; line-height: 25px; font-weight: 300; letter-spacing: -0.5px; color:#666;}
 }
+
+@media all and (max-width:767px){
+  .production_up_list li {width: 98%; margin:25px 1%;}
+  .production_up_inner .img_con {width: 48%; display: inline-block;vertical-align: middle;} 
+  .production_up_inner .img_con img {width: 80%;}
+  .production_up_inner .txt_con {width: 50%; margin:0; display: inline-block; vertical-align: middle;}
+  .production_up_inner .txt_con .tit {font-size: 15px; text-align: left;}
+  .production_up_inner .txt_con .txt {margin-top: 15px;}
+  .production_up_inner .txt_con .txt li {padding:8px 0; margin:0;}
+  .production_up_inner .txt_con .txt li p {padding-left:20px; font-size: 14px; line-height:1.2}
+
+  .productionCon_02 {margin-top: 100px;}
+}
