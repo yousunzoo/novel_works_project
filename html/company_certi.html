@@ -30,6 +30,7 @@
   <div id="wrap">
     <!-- header -->
     <header>
+      <div class="gnb_overlay_bg"></div>
       <div class="header_inner clearfix">
         <h1 class="logo">
           <a href="../index.html" title="메인으로">
@@ -44,7 +45,8 @@
             </ul>
           </div>
           <button type="button" class="site_map">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars active"></i>
+            <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
       </div>
@@ -53,7 +55,7 @@
         <div id="gnbBg"></div>
         <ul class="header_gnb_menu clearfix">
           <li class="gnb1">
-            <a href="./company_ceo.html">company</a>
+            <a href="./company_ceo.html">company<span class="mobile_more_icon"><i class="fa-solid fa-plus"></i></span></a>
             <div class="gnb_2dep">
               <ul>
                 <li><a href="./company_ceo.html"><span>회사정보</span></a></li>
@@ -62,19 +64,19 @@
             </div>
           </li>
           <li class="gnb2">
-            <a href="#">business</a>
+            <a href="./business_production.html">business<span class="mobile_more_icon"><i class="fa-solid fa-plus"></i></span></a>
             <div class="gnb_2dep">
               <ul>
-                <li><a href="#"><span>제품개발 생산</span></a></li>
-                <li><a href="#"><span>원천기술 개발</span></a></li>
+                <li><a href="./business_production.html"><span>제품개발 생산</span></a></li>
+                <li><a href="./business_development.html"><span>원천기술 개발</span></a></li>
               </ul>
             </div>
           </li>
           <li class="gnb3">
-            <a href="#">product</a>
+            <a href="./product_all.html">product<span class="mobile_more_icon"><i class="fa-solid fa-plus"></i></span></a>
             <div class="gnb_2dep">
               <ul>
-                <li><a href="#"><span>All</span></a></li>
+                <li><a href="./product_all.html"><span>All</span></a></li>
                 <li><a href="#"><span>UV 소독</span></a></li>
                 <li><a href="#"><span>CLEAN</span></a></li>
                 <li><a href="#"><span>소형가전</span></a></li>
@@ -82,7 +84,7 @@
             </div>
           </li>
           <li class="gnb4">
-            <a href="./tech_uv.html">technology</a>
+            <a href="./tech_uv.html">technology<span class="mobile_more_icon"><i class="fa-solid fa-plus"></i></span></a>
             <div class="gnb_2dep">
               <ul>
                 <li><a href="./tech_uv.html"><span>UV LED 살균</span></a></li>
@@ -91,7 +93,7 @@
             </div>
           </li>
           <li class="gnb5">
-            <a href="./contact.html">contact us</a>
+            <a href="./contact.html">contact us<span class="mobile_more_icon"><i class="fa-solid fa-plus"></i></span></a>
             <div class="gnb_2dep">
               <ul>
                 <li><a href="./contact.html"><span>Contact us</span></a></li>
@@ -245,8 +247,7 @@
             <h3 class="tit">location</h3>
             <ul class="clearfix">
               <li><span>Head office</span>70-2, Yuhyeon-ri, Yangchon-eup, Gimpo-si, Gyeonggi-do, Republic of Korea</li>
-              <li><span>Korea Factory</span>70-2, Yuhyeon-ri, Yangchon-eup, Gimpo-si, Gyeonggi-do, Republic of Korea
-              </li>
+              <li><span>Korea Factory</span>70-2, Yuhyeon-ri, Yangchon-eup, Gimpo-si, Gyeonggi-do, Republic of Korea</li>
               <li><span>China Factory</span>3-3, No 17 Sanwei Gongye ST, Gushu, Xixiang, Baoan, Shenzhen, China</li>
             </ul>
           </div>
@@ -256,6 +257,67 @@
         </div>
       </div>
     </footer>
+    <!-- 사이트 맵 모달 레이어 팝업 -->
+    <article class="modal_pop_wrapper">
+      <div class="modal_pop_inner">
+        <section id="siteMapCon">
+          <button type="button" class="modal_close_btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <h1>사이트맵</h1>
+          <article class="sitemap_wrapper">
+            <ul class="clearfix">
+              <li>
+                <h2>company</h2>
+                <div class="sitemap_2dep">
+                  <ul>
+                    <li><a href="./company_ceo.html"><span>회사정보</span></a></li>
+                    <li><a href="./company_certi.html"><span>특허사항</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <h2>business</h2>
+                <div class="sitemap_2dep">
+                  <ul>
+                    <li><a href="./business_production.html"><span>제품개발 생산</span></a></li>
+                    <li><a href="./business_development.html"><span>원천기술 개발</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <h2>product</h2>
+                <div class="sitemap_2dep">
+                  <ul>
+                    <li><a href="./product_all.html"><span>All</span></a></li>
+                    <li><a href="#"><span>UV 소독</span></a></li>
+                    <li><a href="#"><span>CLEAN</span></a></li>
+                    <li><a href="#"><span>소형가전</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <h2>technology</h2>
+                <div class="sitemap_2dep">
+                  <ul>
+                    <li><a href="./tech_uv.html"><span>UV LED 살균</span></a></li>
+                    <li><a href="./tech_vio.html"><span>광촉매 살균</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <h2>contact us</h2>
+                <div class="sitemap_2dep">
+                  <ul>
+                    <li><a href="./contact.html"><span>Contact us</span></a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </section>
+      </div>
+    </article>
   </div>
   <!-- javascript -->
   <script src="../js/common/jquery-3.6.0.min.js"></script>
