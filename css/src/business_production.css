@@ -6,6 +6,7 @@
 @import url("../common/page/b_footer_sub.css");
 
 @media all {
+  #wrap {min-width:320px}
   #banner {background-image: url("../../images/business/sub_visual_business.jpg");}
 
   .production_up_list li {float:left; width: 33.33%; padding:0 10px; box-sizing: border-box;}
@@ -35,10 +36,12 @@
 
   .production_down_list li .li_inner {position:relative; width: 100%; text-align: center;}
   .production_down_list li .num {position:absolute; top:-40px; left:0; display: inline-block; width:100%; font-size: 20px; letter-spacing: -0.5px;}
-  .production_down_list li .dot {display: block; position:absolute; top:-4px; left:50%; transform:translateX(-50%); width: 9px; height: 9px; border-radius:50%;background-color: #ddd;}
+  .production_down_list li .dot {display: block; position:absolute; top:-4px; left:50%; transform:translateX(-50%); width: 9px; height: 9px; border-radius:50%;background-color: #ddd; transition: background-color 600ms ease;}
   .production_down_list li .dot::before {position:absolute; display:block; content:''; 
     top:50%; left:50%; transform:translateX(-50%) translateY(-50%);
-    width: 15px; height: 15px; border-radius: 50%; border:2px solid var(--main_02); opacity: 0;}
+    width: 15px; height: 15px; border-radius: 50%; border:2px solid var(--main_02); opacity: 0; transition: opacity 600ms ease;}
+
+    /* active 상태일 때 */
     .production_down_list li.active .dot::before {opacity:1;}
     .production_down_list li.active .dot {background-color: var(--main_02);}
 
@@ -49,7 +52,8 @@
   .li_inner .txt_con .txt {padding-top: 10px; font-size: 15px; line-height: 25px; font-weight: 300; letter-spacing: -0.5px; color:#666;}
 }
 
-@media all and (max-width:767px){
+@media all and (max-width:1120px) {
+
   .production_up_list li {width: 98%; margin:25px 1%;}
   .production_up_inner .img_con {width: 48%; display: inline-block;vertical-align: middle;} 
   .production_up_inner .img_con img {width: 80%;}
@@ -59,7 +63,7 @@
   .production_up_inner .txt_con .txt li {padding:8px 0; margin:0;}
   .production_up_inner .txt_con .txt li p {padding-left:20px; font-size: 14px; line-height:1.2}
 
-  .productionCon_02 {margin-top: 100px;}
+  .productionCon_02 {margin-top: 100px; margin-bottom: 0;}
   .production_down_list li .num, .li_inner .txt_con {display:none}
   .production_line_con {position:static; height:auto; margin-left:10px; width:calc(100% - 10px); background: none;}
   .production_down_list li {position:relative; width: 100%;}
@@ -74,8 +78,8 @@
     
   .li_inner .txt_con_m {display: block;}
   .txt_con_m .num_icon {width: 110px; display: inline-block; vertical-align: top;}
+  .txt_con_m .num_icon .num {position:static; display:inline-block; font-size: 15px; padding-bottom:15px; transition: color 600ms ease;}
   .active .txt_con_m .num_icon .num {color:var(--main_02)}
-  .txt_con_m .num_icon .num {position:static; display:inline-block; font-size: 15px; padding-bottom:15px;}
   .txt_con_m .num_icon .icon {width: 110px; height: 47px;}
   .txt_con_m .num_icon .icon img {width:auto; height: 100%;}
   .txt_con_m .tit_txt {display: inline-block; width:calc(100% - 120px); padding-left:0;}
