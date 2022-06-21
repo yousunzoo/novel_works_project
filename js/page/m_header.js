@@ -9,7 +9,7 @@
   const wrap = $('#wrap');
   const header = wrap.find('header');
   const headerHeight = header.height();
-  console.log(headerHeight);
+  // console.log(headerHeight);
   const gnb = header.find('#gnb');
   const gnbBg = gnb.find('#gnbBg');
   const gnbLi = gnb.find('li');
