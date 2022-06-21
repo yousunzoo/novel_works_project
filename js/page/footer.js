@@ -1,8 +1,11 @@
 // footer.js
 // link 누를 때 해당 modal 창 띄우기
+// .to_top_btn 누르면 최상단으로 스크롤 이동
+
 (function($){
   // 변수
   const footer = $('footer');
+  const topBtn = footer.find('.to_top_btn');
   const footerLinkList = footer.find('.footer_top').children('ul');
   const footerLink = footerLinkList.children('li');
   const modal = $('.modal_pop_wrapper');
@@ -164,6 +167,14 @@
   let link = [privacy, terms, location];
 
 // event
+
+// topBtn 클릭 이벤트
+topBtn.on('click', function(e){
+  e.preventDefault();
+  $('html, body').stop().animate({scrollTop:0}, 500);
+});
+
+// footerTop 링크 클릭 이벤트
 footerLink.on('click', function(e){
   e.preventDefault();
   let i = $(this).index();
@@ -171,11 +182,11 @@ footerLink.on('click', function(e){
   modal.stop().fadeIn();
 });
 
-
+// modal 창 닫기 이벤트
 $(document).on('click', '.modal_close_btn', function(e){
   e.preventDefault();
   modal.stop().fadeOut();
 
-})
+});
 
 })(jQuery);
