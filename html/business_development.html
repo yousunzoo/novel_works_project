@@ -30,6 +30,7 @@
   <div id="wrap">
     <!-- header -->
     <header>
+      <div class="gnb_overlay_bg"></div>
       <div class="header_inner clearfix">
         <h1 class="logo">
           <a href="../index.html" title="메인으로">
@@ -44,7 +45,8 @@
             </ul>
           </div>
           <button type="button" class="site_map">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars active"></i>
+            <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
       </div>
@@ -53,7 +55,7 @@
         <div id="gnbBg"></div>
         <ul class="header_gnb_menu clearfix">
           <li class="gnb1">
-            <a href="./company_ceo.html">company</a>
+            <a href="./company_ceo.html">company<span class="mobile_more_icon"><i class="fa-solid fa-plus"></i></span></a>
             <div class="gnb_2dep">
               <ul>
                 <li><a href="./company_ceo.html"><span>회사정보</span></a></li>
@@ -62,7 +64,7 @@
             </div>
           </li>
           <li class="gnb2">
-            <a href="./business_production.html">business</a>
+            <a href="./business_production.html">business<span class="mobile_more_icon"><i class="fa-solid fa-plus"></i></span></a>
             <div class="gnb_2dep">
               <ul>
                 <li><a href="./business_production.html"><span>제품개발 생산</span></a></li>
@@ -71,10 +73,10 @@
             </div>
           </li>
           <li class="gnb3">
-            <a href="#">product</a>
+            <a href="./product_all.html">product<span class="mobile_more_icon"><i class="fa-solid fa-plus"></i></span></a>
             <div class="gnb_2dep">
               <ul>
-                <li><a href="#"><span>All</span></a></li>
+                <li><a href="./product_all.html"><span>All</span></a></li>
                 <li><a href="#"><span>UV 소독</span></a></li>
                 <li><a href="#"><span>CLEAN</span></a></li>
                 <li><a href="#"><span>소형가전</span></a></li>
@@ -82,7 +84,7 @@
             </div>
           </li>
           <li class="gnb4">
-            <a href="./tech_uv.html">technology</a>
+            <a href="./tech_uv.html">technology<span class="mobile_more_icon"><i class="fa-solid fa-plus"></i></span></a>
             <div class="gnb_2dep">
               <ul>
                 <li><a href="./tech_uv.html"><span>UV LED 살균</span></a></li>
@@ -91,7 +93,7 @@
             </div>
           </li>
           <li class="gnb5">
-            <a href="./contact.html">contact us</a>
+            <a href="./contact.html">contact us<span class="mobile_more_icon"><i class="fa-solid fa-plus"></i></span></a>
             <div class="gnb_2dep">
               <ul>
                 <li><a href="./contact.html"><span>Contact us</span></a></li>
@@ -265,7 +267,8 @@
                     </div>
                     <div class="develop_con03">
                       <span class="develop_con03_img">
-                        <img src="../images/business/develop/develop_con03_img.png" alt="develop3Con">
+                        <img src="../images/business/develop/develop_con03_img.png" alt="develop3Con" class="pc_img">
+                        <img src="../images/business/develop/develop_con03_img_m.png" alt="develop3Con_m" class="mobile_img">
                       </span>
                     </div>
 
@@ -296,7 +299,8 @@
                         피부상태 측정기
                       </p>
                       <div class="develop_con04_img">
-                        <img src="../images/business/develop/develop_con04_img04.jpg" alt="develop4Con">
+                        <img src="../images/business/develop/develop_con04_img04.jpg" alt="develop4Con" class="pc_img">
+                        <img src="../images/business/develop/develop_con04_img04_m.jpg" alt="develop4Con" class="moblie_img">
                       </div>
                     </div>
                   </li>
@@ -417,6 +421,8 @@
   <!-- javascript -->
   <script src="../js/common/jquery-3.6.0.min.js"></script>
   <script src="../js/common/jquery-ui.min.js"></script>
+  <script src="../js/page/m_header.js"></script>
+  <script src="../js/page/footer.js"></script>
 </body>
 
 </html>

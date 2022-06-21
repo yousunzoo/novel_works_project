@@ -6,6 +6,7 @@
 @import url("../common/page/b_footer_sub.css");
 
 @media all {
+  #wrap {min-width:320px;}
   #banner {
     background-image: url("../../images/business/sub_visual_business.jpg");
   }
@@ -68,8 +69,7 @@
   }
 
   .develop_video iframe {
-    position: absolute;
-    top: 0; left: 0;
+    position: absolute; top: 0; left: 0;
     width: 100%; height: 100%;
   }
 
@@ -139,14 +139,12 @@
 
   #develop3Con {padding-top: 120px;}
   .develop_con03 {
-    position:relative;
-    width: 100%; height: 745px;
-    background: url("../../images/business/develop/develop_con03_bg.jpg") center no-repeat; 
-    background-size: cover;}
+    position:relative; width: 100%; height: 745px;
+    background: url("../../images/business/develop/develop_con03_bg.jpg") center no-repeat; background-size: cover;}
   .develop_con03_img {
-    position:absolute; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);
-    display:block; width: 100%; max-width: 1100px; height: 632px;
+    position:absolute; top:50%; left:50%; transform: translateX(-50%) translateY(-50%); display:block; width: 100%; max-width: 1100px; height: 632px;
   }
+  .mobile_img {display: none;}
 
   #develop4Con {padding-top: 120px;}
   .develop_sub_txt {padding-top: 30px; padding-bottom: 80px;
@@ -182,4 +180,56 @@
   }
   .develop_tab_m .tab_list_wrapper li a {line-height: 1; padding:10px 15px; font-weight: 400; font-size: 13px;}
 
+  .develop_tit {padding-bottom: 25px;}
+  .develop_tit .tit01 {font-size: 15px; padding-bottom: 5px;}
+  .develop_tit .tit02 {font-size: 26px; line-height:1.2}
+  .develop_tit .dot {top:-4px; right:-7px; width: 4px; height: 4px;}
+
+  .develop_con01_02 {margin-top: 0; min-height:300px;
+  background: #fff url("../../images/business/develop/develop_con01_bg.png") 
+  center 50% no-repeat;}
+  .develop_product {position:static; padding-top: 0; height:auto}
+  .develop_product .con_tit {position: static;}
+  .develop_product .develop_img {position: static; margin-top: 50px;}
+  .develop_product .con_tit .en_tit {font-size: 13px;}
+  .develop_product .con_tit .ko_tit {padding-top: 10px;font-size: 23px;}
+  .develop_step_con li .line_txt:before, .develop_step_con li .line_txt::before {display: none;}
+
+  #develop2Con {padding-top: 90px; margin-top: -80px;}
+  .develop_con02_img span {width: 100%;}
+  .develop_step_con {margin-top: 25px;}
+  .develop_step_con li {width: 100%;}
+  .develop_step_con li:nth-child(2) {margin: 0; margin-top: 35px;}
+  .develop_step_con li:nth-child(3) {margin: 0; margin-top: 35px;}
+  .develop_step_con li .num {float:none; display:inline-block; width: 45px; font-size: 37px; line-height:1; vertical-align: middle;}
+  .develop_step_con li .line_txt {position:static; display: inline-block; float:none; width:calc(100% - 80px); vertical-align: middle;}
+  .develop_step_con .line_txt .line_inner p {padding:25px; font-size: 14px; word-break: keep-all;}
+  .develop_step_con .line_txt .line_inner p br {display: none;}
+  .develop_step_con .line_txt .line_inner {height:auto;}
+
+  #develop3Con {padding-top: 90px;}
+  .develop_con03 {padding:30px 0;}
+  .develop_con03 .pc_img {display: none;}
+  .mobile_img {display: block;}
+
+  #develop4Con {padding-top: 90px;}
+  .develop_sub_txt {padding-top: 5px; padding-bottom: 35px; font-size: 20px;}
+  .spatula_slice_img span {position:relative; width:58%; margin: 0 1%; height:0;padding-top: 48%;}
+  .spatula_slice_img span img {position:absolute; top:0; left: 0;}
+
+  .develop_con04_02 {padding-top: 60px;}
+}
+
+@media all and (max-width:1120px) {
+  .develop_con03 {position:static; height:auto; padding:60px 0;}
+  .develop_con03_img {position:static; padding:0 15px; width:calc(100% - 30px); top:10%; left:0; margin:0; height:auto; transform:none;}
+
+  .spatula_slice_img {width:100%; margin:0;}
+  .spatula_slice_img span:first-child {width: 38%;}
+  .spatula_slice_img span:last-child {width: 58%;}
+
+  .develop_con04_img {position: static; width: 100%; height:auto;}
+  .develop_con04_img .pc_img {display:none}
+  .develop_con04_img .mobile_img {display: block;}
+  .develop_con04_img img {position:static; left: 0; transform:none; width: 100%; height: 100%;}
 }
