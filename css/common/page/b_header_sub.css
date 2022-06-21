@@ -77,7 +77,6 @@ header.fixed .header_inner  {
 @media all and (min-width:768px) and (max-width:1023px) {
   /* 기준 디바이스 크기 : 768px */
   #wrap {min-width:768px; min-height:100vh;}
-  header {position:fixed; top:0; left:0; height:60px; z-index: 100;}
   .header_inner {padding: 0 10px;}
   .header_inner .logo {position:absolute; display: block; width: 104.4px; height: 60px; z-index:100;}
   .header_inner .header_util_box {width: 135px;}
