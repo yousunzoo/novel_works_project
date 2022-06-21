@@ -29,14 +29,15 @@
 .visual_slider_btn button {width: 50px; height: 50px; border-radius:50px; }
 .visual_slider_btn button i {font-size: 16px;}
 
+.visual_prd_inner span {display: none;}
 .visual_slider {height: 100%;}
 .visual_slide_li .visual_txt_area {margin-top:-35%;}
 .visual_txt_area .visual_txt_inner {padding:0 15px; text-align: center;}
 .visual_txt1 {margin-bottom:10px; font-size: 10px;}
 .visual_txt2 {font-size: 42px;line-height:1;}
 .more_view_btn {display:none}
-.visual_slide_li:first-child .visual_img {background : url('../../images/main/main_visual/main_visual_01_m.jpg') no-repeat; background-size: cover;}
-.visual_slide_li:nth-child(2) .visual_img {background : url('../../images/main/main_visual/main_visual_02_m.jpg') no-repeat; background-size: cover;}
+.visual_slide_li.li_01 .visual_img {background : url('../../images/main/main_visual/main_visual_01_m.jpg') bottom center no-repeat; background-size: cover;}
+.visual_slide_li.li_02 .visual_img {background : url('../../images/main/main_visual/main_visual_02_m.jpg') bottom center no-repeat; background-size: cover;}
     
 /* mainContent1 */
 #mainContent1 {height: auto; padding-top:50px; }
