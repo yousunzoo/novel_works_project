@@ -10,8 +10,9 @@ setTimeout(function(){
     const body = $('body');
     const header = $('header');
     const footer = $('footer');
+    const modal = $('.modal_pop_wrapper');
     const baseUrl = "../page/common/";
-    const importPage = ['header.html', 'footer.html'];
+    const importPage = ['header.html', 'footer.html','modal.html'];
   
     // 기능 수행
     header.load(baseUrl +importPage[0], function(){
@@ -38,6 +39,7 @@ setTimeout(function(){
       body.append(footScript);
     });
 
+    modal.load(baseUrl +importPage[2])
 
 }, 100)
 })(jQuery);
