@@ -164,7 +164,7 @@
   .develop_con04_img img.moblie_img {display: none;}
 }
 
-@media all and (max-width:767px) {
+@media all and (max-width:1023px) {
   #develop1Con {padding-top: 90px;}
   .tabmenu {padding-top: 0;}
   .develop_tab {display: none;}
