@@ -33,7 +33,8 @@ $.getJSON(jsonData, function(data){
   } // deviceCheckFn()
 
   let beforeDevice = deviceCheckFn();
-  console.log(beforeDevice)
+  // console.log(beforeDevice);
+  
   // 이벤트
   win.on('resize', function(){
     winW = win.width();
@@ -42,7 +43,7 @@ $.getJSON(jsonData, function(data){
       beforeDevice = afterDevice;
       deviceResult = beforeDevice;
       location.reload();
-      console.log(deviceResult);
+      // console.log(deviceResult);
       
     }
   }); win.on('resize')
