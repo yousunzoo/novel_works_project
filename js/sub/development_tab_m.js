@@ -38,7 +38,7 @@
         i = $target.index();
         targetTop = $target.offset().top;
 
-        if (targetTop <= scroll){
+        if (targetTop - 100 <= scroll){
           let changeText = tabLi.eq(i).text();
           openBtn.find('span').text(changeText);
         }
