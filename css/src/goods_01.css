@@ -8,4 +8,36 @@
 @media all {
   #banner {background-image: url("../../images/product/sub_visual_product.jpg");}
   #sideMenu .side_menu_inner .snb {padding:0;}
+
+  .product_view_top {position: relative;}
+  .go_prev_btn {position: absolute; right:0; top:0; width: 150px; height:60px; line-height: 60px; z-index: 1; border:1px solid #222; text-align: center; border-radius: 5px; font-size: 15px; letter-spacing: 0.5px;}
+  .view_top_img {float:left; width: 30%; border-radius: 20px; background-color: #E3F1FF;}
+  .view_top_img span {display: block; position: relative; height:0; padding-top: 100%;}
+  .view_top_img span img {max-width: 100%; max-height: 100%; width:auto; position: absolute; top:0; left:0; right:0; bottom: 0; margin:auto; padding:18% 15px; box-sizing: border-box;}
+
+  .view_top_info {float:left; width: 70%; display: table; height:350px; position: relative;}
+  .view_top_info .info_inner {display: table-cell; vertical-align: middle; padding-left:7%; box-sizing: border-box;}
+  .view_top_info .info_tit {font-size: 40px; line-height: 50px; letter-spacing: -0.5px; padding-right: 150px;}
+  .view_top_info .info_txt {font-size: 20px; line-height: 30px; letter-spacing: -0.5px; color:#888; font-weight: 300; word-break: keep-all; margin-top: 30px;}
+
+  .product_slide {margin-top: 40px;}
+  .product_slide_large {position:relative; width: 100%; height:auto; background-color: var(--background); border-radius:20px; overflow: hidden;}
+  .slide_btn {z-index: 10; position:absolute; top:50%; margin-top: -50px; width: 100px; height: 100px;background: no-repeat center; background-color: rgba(255,255,255,0.5); border-radius: 100%; font-size: 0;}
+  .slide_btn.prev {left:50px; background-image: url("../../images/product/slide_arrow_prev.png");}
+  .slide_btn.next {right:50px; background-image: url("../../images/product/slide_arrow_next.png");}
+
+  .slide_large {width: 400%;}
+  .slide_large li {width: 25%; float:left;}
+  .slide_large li div {position:relative; height:0; padding-top: 45%;}
+  .slide_large li div img {position: absolute; top:0; left:0; right:0; bottom:0; margin:auto; max-width: 100%; max-height: 100%; width: auto; height:100%;}
+
+  .product_slide_thumb {margin-top: 30px;}
+  .slide_thumb {width: 100%;}
+  .slide_thumb li {float:left; width: 18%; margin:0 1%}
+  .slide_thumb li:first-child {margin-left: 0;}
+  .slide_thumb li div {position: relative; padding-top: 66%; height:0; background-color: #eee; border-radius: 15px; overflow: hidden;}
+  .slide_thumb li div img {position: absolute; top:0; left:0; right:0; bottom:0; margin:auto; max-width: 100%; max-height: 100%; width: auto; height:100%;}
+
+  .product_img {margin-top: 130px;}
+  .product_img img {max-width: 100%; width:auto; height: auto; margin: 0 auto;}
 }
