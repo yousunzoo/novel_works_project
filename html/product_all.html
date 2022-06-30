@@ -30,76 +30,6 @@
   <div id="wrap">
     <!-- header -->
     <header>
-      <div class="header_inner clearfix">
-        <h1 class="logo">
-          <a href="../index.html" title="메인으로">
-            <img src="../images/common/header/logo.png" alt="노블웍스">
-          </a>
-        </h1>
-        <div class="header_util_box clearfix">
-          <div class="header_lang">
-            <ul class="clearfix">
-              <li><a href="#">ENG</a></li>
-              <li class="selected"><a href="#">KOR</a></li>
-            </ul>
-          </div>
-          <button type="button" class="site_map">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
-      </div>
-      <nav id="gnb">
-        <h2 class="blind">주메뉴</h2>
-        <div id="gnbBg"></div>
-        <ul class="header_gnb_menu clearfix">
-          <li class="gnb1">
-            <a href="#">company</a>
-            <div class="gnb_2dep">
-              <ul>
-                <li><a href="#"><span>회사정보</span></a></li>
-                <li><a href="#"><span>특허사항</span></a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="gnb2">
-            <a href="#">business</a>
-            <div class="gnb_2dep">
-              <ul>
-                <li><a href="#"><span>제품개발 생산</span></a></li>
-                <li><a href="#"><span>원천기술 개발</span></a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="gnb3">
-            <a href="#">product</a>
-            <div class="gnb_2dep">
-              <ul>
-                <li><a href="#"><span>All</span></a></li>
-                <li><a href="#"><span>UV 소독</span></a></li>
-                <li><a href="#"><span>CLEAN</span></a></li>
-                <li><a href="#"><span>소형가전</span></a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="gnb4">
-            <a href="./tech_uv.html">technology</a>
-            <div class="gnb_2dep">
-              <ul>
-                <li><a href="./tech_uv.html"><span>UV LED 살균</span></a></li>
-                <li><a href="./tech_vio.html"><span>광촉매 살균</span></a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="gnb5">
-            <a href="./contact.html">contact us</a>
-            <div class="gnb_2dep">
-              <ul>
-                <li><a href="./contact.html"><span>Contact us</span></a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
     </header>
     <!-- container -->
     <div class="container">
@@ -272,53 +202,17 @@
     </div>
     <!-- footer -->
     <footer>
-      <div class="footer_inner">
-        <a href="#wrap" class="to_top_btn">
-          <i class="fa-solid fa-arrow-up"></i>
-        </a>
-        <div class="footer_top">
-          <ul class="clearfix">
-            <li><a href="#"><b>Privacy Policy</b></a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Location</a></li>
-          </ul>
-        </div>
-        <div class="footer_bottom">
-          <div class="footer_information">
-            <h3 class="tit">information</h3>
-            <ul class="clearfix">
-              <li><span>Company</span>Novel works</li>
-              <li><span>CEO</span>Sung Hyun, Lee</li>
-              <li><span>License No</span>557-86-00290</li>
-            </ul>
-          </div>
-          <div class="footer_contact">
-            <h3 class="tit">contact</h3>
-            <ul class="clearfix">
-              <li><span>T</span>82-31-987-7325</li>
-              <li><span>F</span>82-31-987-7326</li>
-              <li><span>E</span><a href="mailto:info@novel-works.com">info@novel-works.com</a></li>
-            </ul>
-          </div>
-          <div class="footer_location">
-            <h3 class="tit">location</h3>
-            <ul class="clearfix">
-              <li><span>Head office</span>70-2, Yuhyeon-ri, Yangchon-eup, Gimpo-si, Gyeonggi-do, Republic of Korea</li>
-              <li><span>Korea Factory</span>70-2, Yuhyeon-ri, Yangchon-eup, Gimpo-si, Gyeonggi-do, Republic of Korea
-              </li>
-              <li><span>China Factory</span>3-3, No 17 Sanwei Gongye ST, Gushu, Xixiang, Baoan, Shenzhen, China</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer_copyright">
-          <p>Copyright. 2019 <b>Novelworks</b>. All right reserved</p>
-        </div>
-      </div>
     </footer>
+    <!-- 사이트 맵 모달 레이어 팝업 -->
+    <article class="modal_pop_wrapper">
+    </article>
   </div>
   <!-- javascript -->
   <script src="../js/common/jquery-3.6.0.min.js"></script>
   <script src="../js/common/jquery-ui.min.js"></script>
+  <script src="../js/common/jquery_rwd_set.js"></script>
+  <script src="../js/sub/product_import_data.js"></script>
+  <script src="../js/sub/product_tabmenu.js"></script>
 </body>
 
 </html>
