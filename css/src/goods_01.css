@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* product_all.css */
+
+@import url("../common/a_wrap.css");
+@import url("../common/page/b_header_sub.css");
+@import url("../common/page/b_footer_sub.css");
+
+@media all {
+  #banner {background-image: url("../../images/product/sub_visual_product.jpg");}
+  #sideMenu .side_menu_inner .snb {padding:0;}
+}
