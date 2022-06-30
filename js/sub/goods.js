@@ -4,6 +4,8 @@
  * 갤러리 슬라이드 구현
  * next, prev 버튼 누름에 따라 슬라이드 이동
  * slide thumb 누르면 해당 슬라이드로 이동
+ * 드래그 기능 이용하여 슬라이드 구현
+ * mobile에서 터치했을 때 이벤트(touchstart, touchend)
  */
 
 (function($){
@@ -95,5 +97,38 @@ slideThumbLi.on('click', function(){
   i = y;
 });
 
+// 4. 드래그 했을 때의 이벤트
+slideLargeUl.on('mousedown', function(e){
+  startX = e.clientX;
+}); //mousedown
+
+slideLargeUl.on('mouseup', function(e){
+  endX = e.clientX;
+  let resultX = startX - endX;
+
+  if(resultX > 100){
+    goNextFn()
+  } else if (resultX < -100){
+    goPrevFn()
+  };
+}); //mouseup
+
+// 5. mobile touch 이벤트
+slideLargeUl.on('touchstart', function(e){
+  startX = parseInt(e.originalEvent.touches[0].clientX);
+  // console.log(startX);
+}); //touchstart
+
+slideLargeUl.on('touchend', function(e){
+  endX = parseInt(e.originalEvent.changedTouches[0].clientX);
+  let resultX = startX - endX;
+  // console.log(resultX);
+
+  if(resultX > 100){
+    goNextFn()
+  } else if (resultX < -100){
+    goPrevFn()
+  };
+}); //touchend
 
 })(jQuery);
