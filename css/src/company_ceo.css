@@ -32,6 +32,7 @@
   .ceo_info_list {width: 100%;}
   .ceo_info_list li {float:left; width: 33.33%; height:100%; padding:20px 0; border-left:1px solid #ddd; box-sizing: border-box; text-align: center;}
   .ceo_info_list li:first-child {border-left:0;}
+  .ceo_info_list .ceo_info_con img {max-width:45px; height:auto;}
   .ceo_info_tit {font-size: 13px; letter-spacing: -0.5px; color:#aaa; margin:35px 0 15px;}
   .ceo_info_txt {font-size: 20px; letter-spacing: -0.5px;}
 
