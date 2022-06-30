@@ -1,14 +1,14 @@
 [
  {
-   "id": "goods01",
-   "type": "UV",
+   "id": "goods_01",
+   "type": "UV 소독",
    "name": "이유식 수저 살균기",
    "image": "goods_01.png",
    "alt": "이유식 수저 살균기",
    "link": "goods_01.html"
  },
  {
-   "id": "goods02",
+   "id": "goods_02",
    "type": "CLEAN",
    "name": "폼 디스펜서",
    "image": "goods_02.jpg",
@@ -16,56 +16,56 @@
    "link": "goods_02.html"
  },
  {
-   "id": "goods03",
-   "type": "UV",
+   "id": "goods_03",
+   "type": "UV 소독",
    "name": "칫솔 살균기",
    "image": "goods_03.jpg",
    "alt": "칫솔 살균기",
    "link": "goods_03.html"
  },
  {
-   "id": "goods04",
-   "type": "UV",
+   "id": "goods_04",
+   "type": "UV 소독",
    "name": "JJOBI BOX",
    "image": "goods_04.png",
    "alt": "JJOBI BOX",
    "link": "goods_04.html"
  },
  {
-   "id": "goods05",
-   "type": "UV",
+   "id": "goods_05",
+   "type": "UV 소독",
    "name": "JJOBI",
    "image": "goods_05.png",
    "alt": "JJOBI",
    "link": "goods_05.html"
  },
  {
-   "id": "goods06",
-   "type": "small",
+   "id": "goods_06",
+   "type": "소형가전",
    "name": "코코몽 에어조이",
    "image": "goods_06.png",
    "alt": "코코몽 에어조이",
    "link": "goods_06.html"
  },
  {
-   "id": "goods07",
-   "type": "UV",
+   "id": "goods_07",
+   "type": "UV 소독",
    "name": "패브릭 장난감 살균함",
    "image": "goods_07.jpg",
    "alt": "패브릭 장난감 살균함",
    "link": "goods_07.html"
  },
  {
-   "id": "goods08",
-   "type": "small",
+   "id": "goods_08",
+   "type": "소형가전",
    "name": "큐빙 가습기",
    "image": "goods_08.png",
    "alt": "큐빙 가습기",
    "link": "goods_08.html"
  },
  {
-   "id": "goods09",
-   "type": "small",
+   "id": "goods_09",
+   "type": "소형가전",
    "name": "스마트 아로마 디퓨저",
    "image": "goods_09.png",
    "alt": "스마트 아로마 디퓨저",
