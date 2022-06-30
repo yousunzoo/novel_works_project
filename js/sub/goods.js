@@ -80,7 +80,20 @@ prevBtn.on('click', function(){
 
 nextBtn.on('click', function(){
   goNextFn();
-})
+});
+
+// 3. thumb 클릭시 large slide 구현
+// 변수
+let productSlideThumb = $('.product_slide_thumb');
+let slideThumb = productSlideThumb.find('.slide_thumb');
+let slideThumbLi = slideThumb.children('li');
+
+// 이벤트
+slideThumbLi.on('click', function(){
+  let y = $(this).index();
+  slideLargeUl.stop().animate({marginLeft : -100 * y +'%'});
+  i = y;
+});
 
 
 })(jQuery);
